@@ -4,11 +4,15 @@ use std::collections::HashMap;
 
 pub fn main() {
     let mut heroes = HashMap::new();
+    let batman = String::from("Enga Dev");
 
     // Insert in hashmap (To overwrite use the same key)
     heroes.insert("Superman", "Clark Kent");
     heroes.insert("Batman", "Bruce Wayne");
     heroes.insert("The Flash", "Barry Allen");
+
+    // Insert with variable
+    heroes.insert("Batman", &batman);
 
     // Iterate over hashmap
     for (k, v) in heroes.iter() {
