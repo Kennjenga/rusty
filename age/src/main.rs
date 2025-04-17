@@ -4,10 +4,10 @@
 // mod duplicates_string;
 // mod enumsandvectors;
 // mod functions;
-// mod search;
-// mod hashmaps;
-mod crates_modules;
-use crates_modules::restaurant::order_food;
+mod search;
+//  mod hashmaps;
+// mod crates_modules;
+// use crates_modules::restaurant::order_food;
 // mod structs;
 
 fn main() {
@@ -17,8 +17,8 @@ fn main() {
     // arrays::arrays();
     // enumsandvectors::enums_vectors();
     // functions::main();
-    // search::binary::main();
+    search::linear::main();
     // hashmaps::main();
     // structs::main();
-    order_food();
+    // order_food();
 }

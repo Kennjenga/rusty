@@ -76,6 +76,30 @@ fn binary_search<T: Ord>(arr: &[T], target: T) -> Option<usize> {
     None
 }
 
+// binary search with if else
+fn binary_search_if_else(arr: &[i32], target: i32) -> Option<usize> {
+    if arr.is_empty() {
+        return None;
+    }
+
+    let mut low = 0;
+    let mut high = arr.len() - 1;
+
+    while low <= high {
+        let mid = low + (high - low) / 2;
+
+        if arr[mid] < target {
+            low = mid + 1;
+        } else if arr[mid] > target {
+            high = mid - 1;
+        } else {
+            return Some(mid);
+        }
+    }
+
+    None
+}
+
 pub fn main() {
     let sorted_numbers = vec![2, 5, 8, 12, 16, 23, 38, 56, 72, 91];
     let empty_vec: Vec<i32> = vec![];
