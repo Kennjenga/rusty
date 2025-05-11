@@ -1,5 +1,7 @@
 use rand;
 mod data_types;
+mod binary;
+use binary::binary_search;
 
 
 fn main() {
@@ -23,4 +25,10 @@ fn main() {
         std::cmp::Ordering::Greater => println!("Eligible to vote"),
      }
 
+     let array = [1, 2, 3, 4, 5];
+        let target = 3;
+        match binary_search(&array, target) {
+            Some(index) => println!("Element found at index: {}", index),
+            None => println!("Element not found"),
+        }
 }
