@@ -1,4 +1,6 @@
 # Rust Programming Overview
+![image](https://github.com/user-attachments/assets/7c702878-a5b2-4daa-8ce6-417a5bd9b0fc)
+
 
 Rust is a systems programming language that provides high performance similar to C++ while focusing on safety and concurrency. It is designed to reduce memory-related errors, making it an excellent choice for low-level programming tasks such as hardware and memory management.
 
